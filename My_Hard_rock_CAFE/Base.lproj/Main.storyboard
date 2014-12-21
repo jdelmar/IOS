@@ -19,6 +19,10 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hard_rock_cafe_homepage" translatesAutoresizingMaskIntoConstraints="NO" id="Az3-pW-VFI">
                                 <rect key="frame" x="0.0" y="182" width="375" height="304"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="mFp-Mo-Pam" appends="YES" id="8jV-o3-Qk4"/>
+                                </connections>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Hard Rock CAFE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
                                 <rect key="frame" x="-85" y="207" width="545" height="32"/>
@@ -37,6 +41,7 @@
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="Az3-pW-VFI" firstAttribute="centerX" secondItem="A5M-7J-77L" secondAttribute="centerX" id="1Zx-V9-91b"/>
                             <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="VB5-tz-ClV" secondAttribute="bottom" constant="23" id="1m2-Qj-qEb"/>
@@ -54,11 +59,15 @@
                             <constraint firstItem="Az3-pW-VFI" firstAttribute="bottom" secondItem="4ug-Mw-9AY" secondAttribute="top" constant="-132" id="tQG-SU-78L"/>
                             <constraint firstItem="VB5-tz-ClV" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="zVe-y0-jjf"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="mFp-Mo-Pam" appends="YES" id="8o9-NP-KXQ"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="more" id="acW-dT-cKf"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="mFp-Mo-Pam"/>
             </objects>
             <point key="canvasLocation" x="756.5" y="-331.5"/>
         </scene>

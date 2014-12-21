@@ -16,6 +16,7 @@
 		43407AAC1A45E3BF00D61BF4 /* My_Hard_rock_CAFETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43407AAB1A45E3BF00D61BF4 /* My_Hard_rock_CAFETests.swift */; };
 		43407AB81A45F60200D61BF4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43407AB71A45F60200D61BF4 /* MapKit.framework */; };
 		43407ABA1A4625A200D61BF4 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43407AB91A4625A200D61BF4 /* ThirdViewController.swift */; };
+		43407ABC1A46659B00D61BF4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43407ABB1A46659B00D61BF4 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		43407AAB1A45E3BF00D61BF4 /* My_Hard_rock_CAFETests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_Hard_rock_CAFETests.swift; sourceTree = "<group>"; };
 		43407AB71A45F60200D61BF4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		43407AB91A4625A200D61BF4 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		43407ABB1A46659B00D61BF4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43407ABC1A46659B00D61BF4 /* CoreLocation.framework in Frameworks */,
 				43407AB81A45F60200D61BF4 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,6 +69,7 @@
 		43407A851A45E3BF00D61BF4 = {
 			isa = PBXGroup;
 			children = (
+				43407ABB1A46659B00D61BF4 /* CoreLocation.framework */,
 				43407AB71A45F60200D61BF4 /* MapKit.framework */,
 				43407A901A45E3BF00D61BF4 /* My_Hard_rock_CAFE */,
 				43407AA81A45E3BF00D61BF4 /* My_Hard_rock_CAFETests */,

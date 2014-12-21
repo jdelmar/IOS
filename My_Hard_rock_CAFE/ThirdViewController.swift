@@ -8,12 +8,15 @@
 
 import UIKit
 import MapKit
+import CoreLocation
 
-class ThirdViewController: UIViewController, MKMapViewDelegate {
+class ThirdViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate
+{
     @IBOutlet var MapView : MKMapView!
     @IBOutlet weak var SegControl: UISegmentedControl!
     var Current: CLLocationCoordinate2D!
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         
         var latitude:CLLocationDegrees  = 48.8966868
@@ -33,25 +36,30 @@ class ThirdViewController: UIViewController, MKMapViewDelegate {
         
         theUlmMinsterAnnotation.coordinate = schoolLocation
         
-        theUlmMinsterAnnotation.title = "42 Born to code"
-        theUlmMinsterAnnotation.subtitle = "Hotel, Restaurant, Vente d'esclaves"
+        theUlmMinsterAnnotation.title = "Ecole 42"
+        theUlmMinsterAnnotation.subtitle = "42 Born 2 code"
         
         self.MapView.addAnnotation(theUlmMinsterAnnotation)
     }
     
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    @IBAction func SegmentType(sender: AnyObject) {
-        if SegControl.selectedSegmentIndex == 0 {
+    @IBAction func SegmentType(sender: AnyObject)
+    {
+        if SegControl.selectedSegmentIndex == 0
+        {
             MapView.mapType = MKMapType.Standard
         }
-        else if SegControl.selectedSegmentIndex == 1 {
+        else if SegControl.selectedSegmentIndex == 1
+        {
             MapView.mapType = MKMapType.Satellite
         }
-        else if SegControl.selectedSegmentIndex == 2 {
+        else if SegControl.selectedSegmentIndex == 2
+        {
             MapView.mapType = MKMapType.Hybrid
         }
     }
-    }
+}

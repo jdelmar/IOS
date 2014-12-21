@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--First View Controller-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="My_Hard_rock_CAFE" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
+                        <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hard_rock_cafe_homepage" translatesAutoresizingMaskIntoConstraints="NO" id="Az3-pW-VFI">
+                                <rect key="frame" x="0.0" y="25" width="600" height="523"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Hard Rock CAFE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
+                                <rect key="frame" x="140" y="80" width="320" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="A5M-7J-77L" secondAttribute="height" multiplier="286:17" id="Ja8-Mt-XIl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="19"/>
+                                <color key="textColor" red="0.99386961088845238" green="1" blue="0.6410229691354955" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Az3-pW-VFI" firstAttribute="centerX" secondItem="A5M-7J-77L" secondAttribute="centerX" id="1Zx-V9-91b"/>
+                            <constraint firstItem="Az3-pW-VFI" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="5" id="249-2X-g4Y"/>
+                            <constraint firstItem="Az3-pW-VFI" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="3jm-dc-fY0"/>
+                            <constraint firstItem="A5M-7J-77L" firstAttribute="leading" secondItem="Az3-pW-VFI" secondAttribute="trailing" constant="-460" id="65T-hv-HfQ"/>
+                            <constraint firstAttribute="trailing" secondItem="Az3-pW-VFI" secondAttribute="trailing" id="SIG-cM-uUk"/>
+                            <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="60" id="sCD-Du-O2H"/>
+                            <constraint firstItem="Az3-pW-VFI" firstAttribute="bottom" secondItem="4ug-Mw-9AY" secondAttribute="top" constant="-3" id="tQG-SU-78L"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="acW-dT-cKf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="-320"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="My_Hard_rock_CAFE" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Aeo-e6-BzS">
+                                <rect key="frame" x="0.0" y="40" width="600" height="511"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="8rJ-Kc-sve" id="Xuf-XE-Us3"/>
+                                    <outlet property="delegate" destination="8rJ-Kc-sve" id="Gu8-CC-YgF"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Aeo-e6-BzS" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="20" id="59k-Yp-CjC"/>
+                            <constraint firstItem="Aeo-e6-BzS" firstAttribute="bottom" secondItem="Djb-ko-YwX" secondAttribute="top" id="JF0-GJ-661"/>
+                            <constraint firstAttribute="trailing" secondItem="Aeo-e6-BzS" secondAttribute="trailing" id="VYD-2T-vs0"/>
+                            <constraint firstItem="Aeo-e6-BzS" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="Y6t-hb-0mj"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="tableView" destination="Aeo-e6-BzS" id="myD-vy-9Sz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="360"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="2va-Qn-SPb" kind="relationship" relationship="viewControllers" id="GVb-YG-BuE"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="b1v-mI-Z3j">
+            <objects>
+                <viewController id="2va-Qn-SPb" customClass="ThirdViewController" customModule="My_Hard_rock_CAFE" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PkI-82-401"/>
+                        <viewControllerLayoutGuide type="bottom" id="tjL-Vw-mOb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4Z0-9T-3o4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rqC-Wa-jdE" userLabel="MapView">
+                                <rect key="frame" x="0.0" y="28" width="600" height="523"/>
+                            </mapView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="eIJ-Ds-LQE">
+                                <rect key="frame" x="391" y="523" width="209" height="29"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="eIJ-Ds-LQE" secondAttribute="height" multiplier="209:28" id="HBY-yf-hr7"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Standard"/>
+                                    <segment title="Satellite"/>
+                                    <segment title="Hybrid"/>
+                                </segments>
+                                <connections>
+                                    <action selector="SegmentType:" destination="2va-Qn-SPb" eventType="valueChanged" id="iIy-JL-sDw"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rqC-Wa-jdE" firstAttribute="top" secondItem="PkI-82-401" secondAttribute="bottom" constant="8" id="A7p-qi-hpL"/>
+                            <constraint firstItem="eIJ-Ds-LQE" firstAttribute="leading" secondItem="rqC-Wa-jdE" secondAttribute="trailing" constant="-209" id="C5o-v4-DA6"/>
+                            <constraint firstItem="tjL-Vw-mOb" firstAttribute="top" secondItem="eIJ-Ds-LQE" secondAttribute="bottom" id="DFN-Lb-2b3"/>
+                            <constraint firstAttribute="trailing" secondItem="eIJ-Ds-LQE" secondAttribute="trailing" id="KNQ-aq-P4f"/>
+                            <constraint firstItem="tjL-Vw-mOb" firstAttribute="top" secondItem="eIJ-Ds-LQE" secondAttribute="bottom" id="WQy-1T-9OR"/>
+                            <constraint firstAttribute="bottom" secondItem="rqC-Wa-jdE" secondAttribute="bottom" constant="49" id="XIg-dj-Cdf"/>
+                            <constraint firstItem="eIJ-Ds-LQE" firstAttribute="leading" secondItem="rqC-Wa-jdE" secondAttribute="trailing" constant="-209" id="hew-kU-SFd"/>
+                            <constraint firstAttribute="trailing" secondItem="rqC-Wa-jdE" secondAttribute="trailing" id="vW7-bi-bLo"/>
+                            <constraint firstItem="rqC-Wa-jdE" firstAttribute="leading" secondItem="4Z0-9T-3o4" secondAttribute="leading" id="yBH-2I-GpT"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="hew-kU-SFd"/>
+                                <exclude reference="DFN-Lb-2b3"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="search" id="OR1-e0-SOa"/>
+                    <connections>
+                        <outlet property="MapView" destination="rqC-Wa-jdE" id="Xl9-Re-rrO"/>
+                        <outlet property="SegControl" destination="eIJ-Ds-LQE" id="Kie-c7-3my"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mMd-7t-CFm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.5" y="784.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hard_rock_cafe_homepage" width="620" height="390"/>
+    </resources>
+</document>

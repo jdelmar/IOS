@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7D2E1F74-920B-46A1-9CFD-82411B7314E8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>My_Hard_rock_CAFE</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>100A01455B736A0677B8B6219219F88D50D366F8</key>
+		<string>vogsphere.42.fr:intra/2014/activities/rush_introduction_to_ios/jdelmar</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>My_Hard_rock_CAFE/My_Hard_rock_CAFE.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>100A01455B736A0677B8B6219219F88D50D366F8</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>vogsphere.42.fr:intra/2014/activities/rush_introduction_to_ios/jdelmar</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>100A01455B736A0677B8B6219219F88D50D366F8</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>100A01455B736A0677B8B6219219F88D50D366F8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>jdelmar</string>
+		</dict>
+	</array>
+</dict>
+</plist>

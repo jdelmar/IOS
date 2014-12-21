@@ -13,7 +13,6 @@
 		43407A9B1A45E3BF00D61BF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43407A991A45E3BF00D61BF4 /* Main.storyboard */; };
 		43407A9D1A45E3BF00D61BF4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43407A9C1A45E3BF00D61BF4 /* Images.xcassets */; };
 		43407AA01A45E3BF00D61BF4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43407A9E1A45E3BF00D61BF4 /* LaunchScreen.xib */; };
-		43407AAC1A45E3BF00D61BF4 /* My_Hard_rock_CAFETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43407AAB1A45E3BF00D61BF4 /* My_Hard_rock_CAFETests.swift */; };
 		43407AB81A45F60200D61BF4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43407AB71A45F60200D61BF4 /* MapKit.framework */; };
 		43407ABA1A4625A200D61BF4 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43407AB91A4625A200D61BF4 /* ThirdViewController.swift */; };
 		43407ABC1A46659B00D61BF4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43407ABB1A46659B00D61BF4 /* CoreLocation.framework */; };
@@ -39,8 +38,6 @@
 		43407A9C1A45E3BF00D61BF4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		43407A9F1A45E3BF00D61BF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		43407AA51A45E3BF00D61BF4 /* My_Hard_rock_CAFETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = My_Hard_rock_CAFETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		43407AAA1A45E3BF00D61BF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		43407AAB1A45E3BF00D61BF4 /* My_Hard_rock_CAFETests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_Hard_rock_CAFETests.swift; sourceTree = "<group>"; };
 		43407AB71A45F60200D61BF4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		43407AB91A4625A200D61BF4 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		43407ABB1A46659B00D61BF4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -72,7 +69,6 @@
 				43407ABB1A46659B00D61BF4 /* CoreLocation.framework */,
 				43407AB71A45F60200D61BF4 /* MapKit.framework */,
 				43407A901A45E3BF00D61BF4 /* My_Hard_rock_CAFE */,
-				43407AA81A45E3BF00D61BF4 /* My_Hard_rock_CAFETests */,
 				43407A8F1A45E3BF00D61BF4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -105,23 +101,6 @@
 			isa = PBXGroup;
 			children = (
 				43407A921A45E3BF00D61BF4 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		43407AA81A45E3BF00D61BF4 /* My_Hard_rock_CAFETests */ = {
-			isa = PBXGroup;
-			children = (
-				43407AAB1A45E3BF00D61BF4 /* My_Hard_rock_CAFETests.swift */,
-				43407AA91A45E3BF00D61BF4 /* Supporting Files */,
-			);
-			path = My_Hard_rock_CAFETests;
-			sourceTree = "<group>";
-		};
-		43407AA91A45E3BF00D61BF4 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				43407AAA1A45E3BF00D61BF4 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -175,6 +154,11 @@
 				TargetAttributes = {
 					43407A8D1A45E3BF00D61BF4 = {
 						CreatedOnToolsVersion = 6.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					43407AA41A45E3BF00D61BF4 = {
 						CreatedOnToolsVersion = 6.1;
@@ -237,7 +221,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43407AAC1A45E3BF00D61BF4 /* My_Hard_rock_CAFETests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +404,7 @@
 				43407AB11A45E3BF00D61BF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		43407AB21A45E3BF00D61BF4 /* Build configuration list for PBXNativeTarget "My_Hard_rock_CAFETests" */ = {
 			isa = XCConfigurationList;
@@ -429,6 +413,7 @@
 				43407AB41A45E3BF00D61BF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

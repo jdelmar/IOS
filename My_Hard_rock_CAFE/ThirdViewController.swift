@@ -14,6 +14,7 @@ class ThirdViewController: UIViewController, MKMapViewDelegate, CLLocationManage
 {
     @IBOutlet var MapView : MKMapView!
     @IBOutlet weak var SegControl: UISegmentedControl!
+    let locationManager = CLLocationManager()
     var Current: CLLocationCoordinate2D!
     override func viewDidLoad()
     {
@@ -40,6 +41,17 @@ class ThirdViewController: UIViewController, MKMapViewDelegate, CLLocationManage
         theUlmMinsterAnnotation.subtitle = "42 Born 2 code"
         
         self.MapView.addAnnotation(theUlmMinsterAnnotation)
+        // Ask for Authorisation from the User.
+        self.locationManager.requestAlwaysAuthorization()
+        
+        // For use in foreground
+        self.locationManager.requestWhenInUseAuthorization()
+        
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+            locationManager.startUpdatingLocation()
+        }
     }
     
     override func didReceiveMemoryWarning()
@@ -61,5 +73,17 @@ class ThirdViewController: UIViewController, MKMapViewDelegate, CLLocationManage
         {
             MapView.mapType = MKMapType.Hybrid
         }
+    }
+    
+    @IBAction func Geoloc(sender: UIButton)
+    {
+        MapView.centerCoordinate.latitude = Current.latitude
+        MapView.centerCoordinate.longitude = Current.longitude
+    }
+    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!)
+    {
+        var locValue:CLLocationCoordinate2D = manager.location.coordinate
+        println("locations = \(locValue.latitude) \(locValue.longitude)")
+        Current = locValue
     }
 }

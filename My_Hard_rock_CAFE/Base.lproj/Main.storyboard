@@ -8,7 +8,6 @@
         <!--First View Controller-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="My_Hard_rock_CAFE" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
@@ -59,13 +58,13 @@
                     <tabBarItem key="tabBarItem" systemItem="more" id="acW-dT-cKf"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="756.5" y="-331.5"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="My_Hard_rock_CAFE" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
@@ -97,13 +96,13 @@
                         <outlet property="tableView" destination="Aeo-e6-BzS" id="myD-vy-9Sz"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="750" y="360"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
                 <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
@@ -117,13 +116,13 @@
                         <segue destination="2va-Qn-SPb" kind="relationship" relationship="viewControllers" id="GVb-YG-BuE"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
         <!--Third View Controller-->
         <scene sceneID="b1v-mI-Z3j">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mMd-7t-CFm" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="2va-Qn-SPb" customClass="ThirdViewController" customModule="My_Hard_rock_CAFE" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PkI-82-401"/>
@@ -151,6 +150,18 @@
                                     <action selector="SegmentType:" destination="2va-Qn-SPb" eventType="valueChanged" id="iIy-JL-sDw"/>
                                 </connections>
                             </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zUW-bx-00s">
+                                <rect key="frame" x="358" y="523" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zUW-bx-00s" secondAttribute="height" multiplier="1:1" id="ARD-ea-eK2"/>
+                                </constraints>
+                                <state key="normal" image="Near_Me">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Geoloc:" destination="2va-Qn-SPb" eventType="touchUpInside" id="Xl7-wQ-8vI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -158,6 +169,8 @@
                             <constraint firstItem="eIJ-Ds-LQE" firstAttribute="leading" secondItem="rqC-Wa-jdE" secondAttribute="trailing" constant="-209" id="C5o-v4-DA6"/>
                             <constraint firstItem="tjL-Vw-mOb" firstAttribute="top" secondItem="eIJ-Ds-LQE" secondAttribute="bottom" id="DFN-Lb-2b3"/>
                             <constraint firstAttribute="trailing" secondItem="eIJ-Ds-LQE" secondAttribute="trailing" id="KNQ-aq-P4f"/>
+                            <constraint firstItem="zUW-bx-00s" firstAttribute="top" secondItem="eIJ-Ds-LQE" secondAttribute="top" id="M8o-rZ-zjp"/>
+                            <constraint firstItem="eIJ-Ds-LQE" firstAttribute="leading" secondItem="zUW-bx-00s" secondAttribute="trailing" constant="8" symbolic="YES" id="QfJ-pQ-eQK"/>
                             <constraint firstItem="tjL-Vw-mOb" firstAttribute="top" secondItem="eIJ-Ds-LQE" secondAttribute="bottom" id="WQy-1T-9OR"/>
                             <constraint firstAttribute="bottom" secondItem="rqC-Wa-jdE" secondAttribute="bottom" constant="49" id="XIg-dj-Cdf"/>
                             <constraint firstItem="eIJ-Ds-LQE" firstAttribute="leading" secondItem="rqC-Wa-jdE" secondAttribute="trailing" constant="-209" id="hew-kU-SFd"/>
@@ -166,8 +179,8 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="hew-kU-SFd"/>
                                 <exclude reference="DFN-Lb-2b3"/>
+                                <exclude reference="hew-kU-SFd"/>
                             </mask>
                         </variation>
                     </view>
@@ -177,12 +190,14 @@
                         <outlet property="SegControl" destination="eIJ-Ds-LQE" id="Kie-c7-3my"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mMd-7t-CFm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.5" y="784.5"/>
         </scene>
     </scenes>
     <resources>
         <image name="1_HRC" width="680" height="240"/>
+        <image name="Near_Me" width="25" height="25"/>
         <image name="Picture 244" width="1600" height="1200"/>
         <image name="hard_rock_cafe_homepage" width="620" height="390"/>
     </resources>
